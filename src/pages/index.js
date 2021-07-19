@@ -12,15 +12,10 @@ import Main from '../styles/HomeStyle'
 import BrenoImage from '../images/breno.svg'
 
 export default function Home() {
-
-
   const [theme, setTheme] = React.useState("light")
-
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light")
   }
-
-
   return (
     <div>
       <Head>
@@ -42,7 +37,7 @@ export default function Home() {
               <h2>DESENVOLVEDOR WEB</h2>
             </div>
             <div>
-              <Image src={BrenoImage} />
+              <Image alt="breno" src={BrenoImage} />
             </div>
           </Main>
         </ThemeProvider>
