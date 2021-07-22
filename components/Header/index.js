@@ -1,6 +1,8 @@
 import React from 'react'
 import { Logo, Head, ListMenu, Button } from './style'
 
+import Link from 'next/link'
+
 export default function Header() {
 
     const [open, setOpen] = React.useState(false);
@@ -21,10 +23,10 @@ export default function Header() {
                 </div>
                 <ListMenu>
                     <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/">QUEM SOU</a></li>
-                        <li><a href="/">TRABALHOS</a></li>
-                        <li><a href="/">CONTATO</a></li>
+                        <li><Link href="/">HOME</Link></li>
+                        <li><Link href="/">QUEM SOU</Link></li>
+                        <li><Link href="/">TRABALHOS</Link></li>
+                        <li><Link href="/">CONTATO</Link></li>
                     </ul>
                 </ListMenu>
 
