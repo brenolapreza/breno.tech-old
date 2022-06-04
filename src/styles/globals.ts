@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -11,13 +11,25 @@ export const GlobalStyle = createGlobalStyle`
     background: var(--background-linear-color);
     color: var(--secundary-color);
     
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
   }
 
   h1, h2, h3, h4, a, p, span {
     margin: 0;
     padding: 0;
+  }
+
+  @media (max-width: 1080px){
+    html {
+        font-size: 93.75%;
+    }
+  }
+  @media (max-width: 720px){
+    html {
+        font-size: 87.5%;
+    }
   }
 
   .container {
@@ -32,5 +44,8 @@ export const GlobalStyle = createGlobalStyle`
     --third-color: #54555B;
     --background-logo: #121316;
     --color-hover: #2E334E;
+
+    --dark-blue-600: #0C0F16;
+    --dark-blue-200: #525568;
   }
 `;

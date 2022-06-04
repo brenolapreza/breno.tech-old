@@ -1,8 +1,8 @@
-import { MenuAltRight } from '@styled-icons/boxicons-regular';
-import { CloseOutline } from '@styled-icons/evaicons-outline';
-import Link from 'next/link';
-import React from 'react';
-import * as S from './styles';
+import { MenuAltRight } from "@styled-icons/boxicons-regular";
+import { CloseOutline } from "@styled-icons/evaicons-outline";
+import Link from "next/link";
+import React from "react";
+import * as S from "./styles";
 
 const Header = () => {
   const [menu, setMenu] = React.useState(false);
@@ -28,6 +28,10 @@ const Header = () => {
               <S.MainMenu>
                 <Link href="/" passHref>
                   <li>Home</li>
+                </Link>
+
+                <Link href="/projects" passHref>
+                  <li>Projetos</li>
                 </Link>
               </S.MainMenu>
             )}
