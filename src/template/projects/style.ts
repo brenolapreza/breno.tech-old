@@ -22,3 +22,8 @@ export const ContainerCard = styled.section`
     flex-direction: column;
   }
 `;
+
+export const TitleProject = styled.h2`
+  font-size: 2rem;
+  text-transform: uppercase;
+`;

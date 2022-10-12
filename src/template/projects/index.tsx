@@ -7,17 +7,17 @@ export const ProjectsTemplate = () => {
       <ContainerCard>
         <CardPortifolio
           title="Inicio"
-          description="Oloquinho meu"
+          description="Descripstion"
           image={"images/image.jpg"}
         />
         <CardPortifolio
           title="Inicio"
-          description="Oloquinho meu"
+          description="Description"
           image={"images/image.jpg"}
         />
         <CardPortifolio
           title="Inicio"
-          description="Oloquinho meu"
+          description="Description"
           image={"images/image.jpg"}
         />
       </ContainerCard>
