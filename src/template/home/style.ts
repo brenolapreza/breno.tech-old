@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
   display: flex;
@@ -10,12 +10,15 @@ export const AboutWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    height: 100%;
   }
 `;
 
 export const AboutText = styled.div`
   max-width: 420px;
   width: 100%;
+  line-height: 1.7rem;
+  padding: 2rem 0;
   span {
     font-size: 1.4rem;
     font-weight: bold;
@@ -23,7 +26,7 @@ export const AboutText = styled.div`
   }
 
   h1 {
-    font-size: 5.4rem;
+    font-size: 4.4rem;
     font-weight: bold;
     line-height: 88.2%;
     margin: 8px 0px;

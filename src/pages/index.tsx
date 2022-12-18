@@ -1,8 +1,7 @@
-import type { NextPage } from 'next';
-import Header from '../components/Header';
-import { HomeTemplate } from '../template/home';
+import Header from "../components/Header";
+import { HomeTemplate } from "../template/home";
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <div>
       <Header />

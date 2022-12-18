@@ -15,15 +15,17 @@ export const ContainerCard = styled.section`
 
   @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
   }
   @media (max-width: 786px) {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 `;
 
 export const TitleProject = styled.h2`
   font-size: 2rem;
   text-transform: uppercase;
+`;
+
+export const Title = styled.h2`
+  padding-top: 2rem;
 `;

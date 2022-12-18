@@ -35,6 +35,10 @@ export const GlobalStyle = createGlobalStyle`
   .container {
     margin: 0 auto;
     max-width: 900px;
+    @media (max-width: 786px) {
+    width: 80%;
+  }
+
   }
   
   :root {

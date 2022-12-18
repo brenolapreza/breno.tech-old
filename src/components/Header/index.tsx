@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       <S.HeaderWrapper>
-        <S.Container>
+        <S.Container className="container">
           <S.LogoB>
             <Link href="/">B</Link>
           </S.LogoB>
@@ -27,11 +27,20 @@ const Header = () => {
             {menu && (
               <S.MainMenu>
                 <Link href="/" passHref>
-                  <li>Home</li>
+                  <a>
+                    <li>Home</li>
+                  </a>
                 </Link>
 
                 <Link href="/projects" passHref>
-                  <li>Projetos</li>
+                  <a>
+                    <li>Projetos</li>
+                  </a>
+                </Link>
+                <Link href="/about" passHref>
+                  <a>
+                    <li>Sobre</li>
+                  </a>
                 </Link>
               </S.MainMenu>
             )}

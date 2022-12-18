@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
   height: 80px;
@@ -35,7 +35,7 @@ export const LogoB = styled.div`
 
   a {
     font-size: 45px;
-    font-family: 'Wire One', sans-serif;
+    font-family: "Wire One", sans-serif;
     text-decoration: none;
     color: var(--secundary-color);
   }
@@ -66,6 +66,22 @@ export const MainMenu = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  list-style: none;
 
   background: #000010e3;
+
+  a {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    transition: 0.4s;
+
+    &:hover {
+      background: var(--color-hover);
+    }
+  }
 `;

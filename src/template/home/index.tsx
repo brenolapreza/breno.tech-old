@@ -1,27 +1,13 @@
-import * as S from './style';
-import Image from 'next/image';
-import BrenoImage from '../../../public/images/BrenoImage.svg';
+import * as S from "./style";
+import Image from "next/image";
+import BrenoImage from "../../../public/images/BrenoDev.jpg";
 import {
   GithubOutline,
   LinkedinOutline,
   TwitterOutline,
   EmailOutline,
-} from '@styled-icons/evaicons-outline';
-import { useEffect, useState } from 'react';
-import github from '../../service/api/github';
-
-interface IGithub {
-  avatar_url: String;
-}
-
+} from "@styled-icons/evaicons-outline";
 export const HomeTemplate = () => {
-  const [githubData, setGithubData] = useState<IGithub>();
-
-  useEffect(() => {
-    github.get('').then((res) => setGithubData(res.data));
-  }, []);
-
-  const avatar = githubData && githubData.avatar_url;
   return (
     <>
       <div className="container">
@@ -31,8 +17,9 @@ export const HomeTemplate = () => {
             <h1>Breno Lapreza</h1>
             <span>Desenvolvedor Front-end</span>
             <p>
-              Tenho 22 anos. Moro no interior de São Paulo. Gosto muito de
-              desenvolver, aprender e práticar.
+              Trabalhando com desenvolvimento web há 3 anos, focando sempre na
+              usabilidade e experiência do usuário. Desenvolvedor front end com
+              experiência utilizando JavaScript/ReactJS e React Native.
             </p>
             <S.SocialWrapper>
               <a
@@ -56,13 +43,6 @@ export const HomeTemplate = () => {
               >
                 <EmailOutline width={30} />
               </a>
-              <a
-                href="https://twitter.com/vainisckas"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <TwitterOutline width={30} />
-              </a>
             </S.SocialWrapper>
           </S.AboutText>
           <S.AboutImage>
@@ -71,7 +51,7 @@ export const HomeTemplate = () => {
                 width={500}
                 height={500}
                 alt="Foto Breno"
-                src={githubData === undefined ? BrenoImage : avatar}
+                src={BrenoImage}
               />
             </div>
           </S.AboutImage>
