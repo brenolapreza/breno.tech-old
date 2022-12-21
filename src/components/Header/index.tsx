@@ -27,20 +27,14 @@ const Header = () => {
             {menu && (
               <S.MainMenu>
                 <Link href="/" passHref>
-                  <a>
-                    <li>Home</li>
-                  </a>
+                  <li>Home</li>
                 </Link>
 
                 <Link href="/projects" passHref>
-                  <a>
-                    <li>Projetos</li>
-                  </a>
+                  <li>Projetos</li>
                 </Link>
                 <Link href="/about" passHref>
-                  <a>
-                    <li>Sobre</li>
-                  </a>
+                  <li>Sobre</li>
                 </Link>
               </S.MainMenu>
             )}

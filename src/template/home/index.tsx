@@ -48,8 +48,8 @@ export const HomeTemplate = () => {
           <S.AboutImage>
             <div>
               <Image
-                width={500}
-                height={500}
+                width={360}
+                height={360}
                 alt="Foto Breno"
                 src={BrenoImage}
               />
